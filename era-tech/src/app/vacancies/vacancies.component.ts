@@ -14,19 +14,19 @@ export class VacanciesComponent {
   isCollapsed: boolean = true;
   vacancies = [
     {
-      title: 'Fullstack Web Developer',
+      title: 'Trainee Fullstack Web Developer',
       location: 'Remote',
       time: 'Fulltime',
       department: 'Development',
     },
     {
-      title: 'Fullstack Web Developer',
+      title: 'Junior Fullstack Web Developer',
       location: 'Remote',
       time: 'Fulltime',
       department: 'Development',
     },
     {
-      title: 'Fullstack Web Developer',
+      title: 'Junior Fullstack Web Developer',
       location: 'Remote',
       time: 'Part-time',
       department: 'Development',

@@ -26,6 +26,14 @@
             margin-top: 3rem;
             justify-content: space-between;
             align-items: center;
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+                transition: 0.2s ease-in-out;
+                box-shadow: 0 0 10px $light-purple,
+                    0 0 40px $light-purple,
+                    0 0 80px $light-purple;
+            }
 
             .vacancy {
                 display: flex;

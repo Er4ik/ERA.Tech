@@ -14,6 +14,31 @@ a {
     text-decoration: none;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1616;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #332c2c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #332c2c #1a1616;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #333 !important;
+}
+
 h1,
 h2,
 h3,
@@ -21,6 +46,7 @@ h4,
 p {
     margin: 0;
 }
+
 
 button {
     border: none;

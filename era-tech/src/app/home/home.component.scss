@@ -73,7 +73,53 @@
 
     .our-values {
         width: 100%;
-        margin-top: 5rem;
+        margin-top: 10rem;
+
+        &-title {
+            font-size: 44px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .our-values-description {
+            display: flex;
+            width: 50%;
+            height: 40vh;
+            position: absolute;
+            padding: 36px 32px;
+            z-index: 2;
+            background: #191616;
+            border: 1px solid #fff;
+            border-radius: 12px;
+            left: 25%;
+            bottom: -200vh;
+
+            .title {
+                width: 150%;
+                font-size: 24px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .values {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                h4 {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    opacity: 0.6;
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-align: justify;
+                }
+            }
+        }
 
         img {
             position: absolute;

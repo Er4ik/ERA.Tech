@@ -1,0 +1,127 @@
+@import 'src/assets/styles/_variables.scss';
+
+header {
+    @include flex-center;
+    height: 65px;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 5rem;
+
+    .container {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-align: justify;
+        align-items: end;
+    }
+
+    ::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 299px;
+        height: 280px;
+        background: url(/assets/pictures/splash-right.svg) center center no-repeat;
+        background-size: auto;
+        background-size: contain;
+        z-index: -1;
+    }
+
+    ::before {
+        content: "";
+            position: absolute;
+            top: 40vh;
+            left: -1rem;
+            width: 151px;
+            height: 501px;
+            background: url(/assets/pictures/splash-left.svg) center center no-repeat;
+            background-size: auto;
+            background-size: contain;
+            z-index: -1;
+    }
+
+    h3 {
+        letter-spacing: 2px;
+    }
+
+    nav {
+        display: flex;
+        gap: 5rem;
+        font-weight: 600;
+
+        span {
+            cursor: pointer;
+            color: $white;
+            opacity: 0.4;
+            font-size: 18px;
+            transition: 0.2s ease-in-out;
+
+            &.active {
+                opacity: 1;
+            }
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .logo {
+        width: 75px;
+        position: absolute;
+        overflow-x: 0;
+        left: 10%;
+        top: 1rem;
+    }
+
+    .hamburger {
+        display: none;
+        z-index: 11;
+    }
+
+    .is-active {
+        position: fixed;
+        right: 2rem;
+    }
+
+    .menu {
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: $white;
+        z-index: 10;
+
+        @include flex-center;
+        flex-direction: column;
+
+        p {
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header {
+        h3 {
+            font-size: 16px;
+        }
+
+        nav {
+            display: none;
+        }
+
+        .hamburger {
+            display: block;
+            transform: scale(0.8);
+
+            .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+                width: 30px;
+            }
+        }
+    }
+}

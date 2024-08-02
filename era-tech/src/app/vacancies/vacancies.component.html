@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="developers">
+        <h2 class="text-gradient">Відкриті вакансії</h2>
+        <div class="splash-wrapper"></div>
+        <div *ngFor="let vacancy of vacancies" class="vacancy-wrapper">
+            <div class="vacancy">
+                <h3>{{ vacancy.title }}</h3>
+                <div class="vacancy-description">
+                    <div class="vacancy-description-item">
+                        <span class="material-symbols-outlined">location_on</span>
+                        <p>{{ vacancy.location }}</p>
+                    </div>
+                    <div class="vacancy-description-item">
+                        <span class="material-symbols-outlined">hourglass</span>
+                        <p>{{ vacancy.time }}</p>
+                    </div>
+                    <div class="vacancy-description-item">
+                        <span class="material-symbols-outlined">code</span>
+                        <p>{{ vacancy.department }}</p>
+                    </div>
+                </div>
+            </div>
+            <button><p>Apply now</p></button>
+        </div>
+    </div>
+</div>

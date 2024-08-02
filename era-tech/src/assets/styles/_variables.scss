@@ -1,0 +1,11 @@
+$white: #ffffff;
+$background: #110f0f;
+$red: #bc0e16;
+$light-purple: #7231CA;
+$purple: #3C2084;
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

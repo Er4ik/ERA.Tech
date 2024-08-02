@@ -1,0 +1,20 @@
+<header>
+    <div class="container">
+        <img class="logo" src="assets/icons/logo-white-icon.png" alt="ertech">
+        <nav>
+            <span *ngFor="let tab of tabs" [ngClass]="{'active': activeTab === tab.tab}" (click)="handleTab(tab.tab)">{{
+                tab.text }}</span>
+        </nav>
+        <button class="hamburger hamburger--collapse" [class]="isBurgerActive ? 'is-active' : ''" type="button"
+            (click)="toggleMenu()">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+        <div *ngIf="isBurgerActive" class="menu" (click)="handleEvent($event)">
+            <p class="menu-item" [routerLink]="['/']"></p>
+            <p class="menu-item" [routerLink]="['/about']"></p>
+            <p class="menu-item" [routerLink]="['/vacancies']"></p>
+        </div>
+    </div>
+</header>
